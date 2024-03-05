@@ -9,4 +9,11 @@
     z-index: 5;
 }
 
+.container {
+    width: 100%;
+}
+
+.list-group{
+    width: 180px;
+} 
 
