@@ -31,7 +31,6 @@ function App() {
   const [cryptos, setCryptos] = useState<Crypto[] | null>(null);
   const [selected, setSelected] = useState<Crypto | null>();
   const [top5, setTop5] = useState<Crypto[] | null>(null);
-  const [low5, setLow5] = useState<Crypto[] | null>(null);
 
   const [range, setRange] = useState<string>("30");
 
@@ -193,10 +192,6 @@ function App() {
           </div>
         </div>
       </nav>
-      {/* <TimeList /> */}
-      {/* <div className="position-absolute top-50 start-50">
-        {selected ? <CryptoSummary crypto={selected} /> : null}
-      </div> */}
       {data ? (
         <div
           className="position-absolute top-50 start-50 translate-middle mb-5"
