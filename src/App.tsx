@@ -1,13 +1,9 @@
-import { ChangeEvent, useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import TimeList from "./components/TimeList";
-import Dropdown from "react-bootstrap/Dropdown";
 import axios from "axios";
 import { Crypto } from "./types/CryptoType";
-import CryptoSummary from "./components/CryptoSummary";
-import { DropdownButton } from "react-bootstrap";
 import type { ChartData, ChartOptions } from "chart.js";
-import { Chart, Line } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import moment from "moment";
 
 import {
